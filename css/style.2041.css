@@ -825,6 +825,7 @@ body.openMenu #navMini {
     color: #7F7F7F;
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 
 .npagePage .module .container_category a {
@@ -3139,6 +3140,11 @@ body.openMenu #navMini {
     display: block
 }
 
+.swiper-container {
+    width: 1218px;
+    margin: 0 auto;
+}
+
 @media screen and (max-width:1270px) {
     .module .module_container.wide {
         max-width: 1170px;
@@ -3358,6 +3364,18 @@ body.openMenu #navMini {
 }
 
 @media screen and (max-width:767px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+    .swiper-container {
+        width: 100%;
+    }
+    .swiper-container img {
+        display: block;
+        width: 130%;
+        margin: 0 auto;
+    }
     #header .content #backBtn {
         display: block
     }
@@ -3736,4 +3754,18 @@ body.openMenu #navMini {
 .container_target {
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background: #fff;
+    border: 1px solid #ffffff;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 100%;
+    border: 1px solid #ffffff;
+    border-color: rgba(255, 255, 255, .5);
 }
